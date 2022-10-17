@@ -1,38 +1,139 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headDiv {
+  /* width:100%; */
+  background-color: #d1d6e4;
+  border-radius: 0 0 5% 5%;
+  padding: 5%;
+}
+h1 {
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+}
+h4 {
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+}
+#Taskinput {
+  width: 30%;
+  padding: 1%;
+  margin-top: 2%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+#addTodo {
+  margin-left: 2%;
+  padding: 0.7%;
+  border: none;
+  border-radius: 10px;
+  background-color: #aa8ed6;
+  font-size: 15px;
+}
+#addTodo:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#updateTodo {
+  margin-left: 2%;
+  padding: 0.7%;
+  border: none;
+  border-radius: 10px;
+  background-color: #aa8ed6;
+  font-size: 15px;
+}
+#updateTodo:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#imagetodo {
+  width: 35%;
+  margin-top: -2.9%;
+  margin-left: 5%;
+  border-radius: 10px;
+  opacity: 0.9;
+  display:block;
+  align-self: flex-start;
+  /* position: fixed; */
+}
+#tasks {
+  margin-top: 2%;
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+  text-align: end;
+}
+#Done {
+  margin-left: 5%;
+  margin-top: 6%;
+  text-decoration: underline;
+  font-family: "Lato", sans-serif;
+}
+#imageDone {
+  margin-right: 7%;
+  display:block;
+  align-self: flex-start;
+}
+.task1 {
+  list-style: none;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#taskdisplay {
+  width: 55%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+li {
+  list-style: none;
+  background-color: #aa8ed6;
+  opacity: 0.9;
+  margin: 1%;
+  padding: 2%;
+  color: black;
+  border-radius: 7px;
+  width: 60%;
+  margin-left: 40%;
+  text-align: center;
+}
+.doneT:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.taskdone {
+  width: 45%;
+}
+.donetodo {
+  margin-left: 5%;
+  background-color: #c6f7c6;
+}
+p {
+  color: rgb(238, 62, 62);
+  padding-top: 1%;
+  margin: 0;
+  padding-left: 3%;
+}
+@media only screen and (max-width: 1000px) {
+  #imageDone{
+    display: none;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #imagetodo{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #flag{
+    display: none;
+  }
+  h1{
+    text-align: center;
+  }
+  #Taskinput{
+    margin-left: 20%;
+  }
+  #tasks{
+    text-align:center;
+  }
+  #taskdisplay,.taskdone{
+    width:80%;
+    text-align: center;
+    align-items: center;
   }
 }
